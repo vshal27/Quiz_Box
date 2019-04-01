@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:background="@drawable/download">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"
+        android:layout_above="@id/rl1"
+        tools:ignore="NotSibling"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#050000"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 1. The persion in the Pictre is John F.Kennedy"
+                    android:textSize="20dp"
+                    android:textColor="#050000"
+                    android:textStyle="bold"
+                    android:id="@+id/question1"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/question1"
+                    android:id="@+id/image1"
+                    android:src="@drawable/john"/>
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image1"
+                    android:id="@+id/switch1"
+                    android:text="Correct"
+                    android:textColor="#050000"
+                    android:textSize="30dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/switch1"
+                    android:text="Save"
+                    android:id="@+id/bb1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 2. The persion in the Pictre is Franklin Delano Roosevelt"
+                    android:textSize="20dp"
+                    android:textColor="#050000"
+                    android:textStyle="bold"
+                    android:id="@+id/question2"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/franklin"
+                    android:layout_below="@id/question2"
+                    android:id="@+id/image2"/>
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image2"
+                    android:text="Correct"
+                    android:textColor="#050000"
+                    android:textSize="30dp"
+                    android:id="@+id/switch2"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/switch2"
+                    android:text="Save"
+                    android:id="@+id/bb2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl3"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 3.Who is best known for his contributions to the design of the modern alternating current electricity supply system"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#050000"
+                    android:id="@+id/question3"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/question3"
+                    android:id="@+id/rg1">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rb1"
+                        android:text="Nikola Tesla"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rb2"
+                        android:text="Thomas Edison"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rb3"
+                        android:text="George Westinghouse"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rb4"
+                        android:text="Newton"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rb4"
+                        android:text="Save"
+                        android:id="@+id/bb3"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question 4. Where was a series of mass executions of Polish prisoners carried out by the Soviet Union ?"
+                    android:textStyle="bold"
+                    android:textColor="#050000"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/question4">
+
+                    <RadioButton
+                        android:id="@+id/rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Katyn Forest"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Mossy Forest"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rb7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Black Forest"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rb8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Tandayapa Cloud Forest"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rb8"
+                        android:text="Save"
+                        android:id="@+id/bb4"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl5"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#050000"
+                    android:textStyle="bold"
+                    android:text="Question 5. Disney's most popular character Mickey Mouse"
+                    android:textSize="20dp"
+                    android:id="@+id/question5"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/question5"
+                    android:text="True"
+                    android:textSize="20dp"
+                    android:id="@+id/cb1"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/cb1"
+                    android:id="@+id/cb2"
+                    android:textSize="20dp"
+                    android:text="False"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cb2"
+                    android:text="Save"
+                    android:id="@+id/bb5"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl6"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#050000"
+                    android:textStyle="bold"
+                    android:text="Question 6. RMS Titanic sank in the early morning of 15 April 1912 in the North Atlantic Ocean ?"
+                    android:textSize="20dp"
+                    android:id="@+id/question6"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/question6"
+                    android:text="True"
+                    android:textSize="20dp"
+                    android:id="@+id/cb3"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/cb3"
+                    android:text="False"
+                    android:textSize="20dp"
+                    android:id="@+id/cb4"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cb4"
+                    android:text="Save"
+                    android:id="@+id/bb6"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Finish"
+                    android:textColor="#050000"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/finishButton"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
